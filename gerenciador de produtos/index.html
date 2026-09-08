@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerenciador de Produtos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gerenciador de Produtos</h1>
+
+        <form id="formulario">
+
+            <input
+                type="text"
+                id="nome"
+                placeholder="Nome do produto"
+            >
+
+            <input
+                type="number"
+                id="preco"
+                placeholder="Preço"
+                step="0.01"
+            >
+
+            <input
+                type="number"
+                id="quantidade"
+                placeholder="Quantidade em estoque"
+            >
+
+            <button type="submit">
+                Cadastrar
+            </button>
+
+        </form>
+
+
+        <input
+            type="text"
+            id="pesquisa"
+            placeholder="Pesquisar produto"
+        >
+
+
+        <p id="mensagem"></p>
+
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Preço</th>
+                    <th>Quantidade</th>
+                    <th>Ações</th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="tabelaProdutos">
+
+            </tbody>
+
+        </table>
+
+
+        <div class="resumo">
+
+            <h2>Resumo</h2>
+
+            <p id="totalEstoque">
+                Valor total do estoque: R$ 0,00
+            </p>
+
+            <p id="quantidadeTotal">
+                Quantidade total de produtos: 0
+            </p>
+
+            <p id="maiorPreco">
+                Produto com maior preço: -
+            </p>
+
+            <p id="menorPreco">
+                Produto com menor preço: -
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="produtos.js"></script>
+
+</body>
+
+</html>

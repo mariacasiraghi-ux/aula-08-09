@@ -1,115 +1,85 @@
 body {
-
     font-family: Arial, sans-serif;
-
     background-color: #f2f2f2;
-
     margin: 0;
-
     padding: 30px;
 }
 
-
-.container {
-
+#chamados {
     max-width: 1000px;
-
     margin: auto;
-
     background-color: white;
-
-    padding: 25px;
-
+    padding: 30px;
     border-radius: 10px;
-
     box-shadow: 0 2px 10px #ccc;
 }
 
-
 h1 {
-
     text-align: center;
 }
 
-
-input {
-
-    padding: 10px;
-
-    margin: 5px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 5px;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
+input,
+textarea,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
 
 button {
-
     padding: 10px 15px;
-
-    margin: 5px;
-
-    background-color: #222;
-
-    color: white;
-
     border: none;
-
     border-radius: 5px;
-
+    background-color: #222;
+    color: white;
     cursor: pointer;
 }
 
-
 button:hover {
-
     background-color: #444;
 }
 
-
-table {
-
-    width: 100%;
-
-    margin-top: 25px;
-
-    border-collapse: collapse;
+#mensagem {
+    color: red;
+    font-weight: bold;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
 
 th,
 td {
-
     border: 1px solid #ccc;
-
     padding: 10px;
-
     text-align: center;
 }
 
-
 th {
-
     background-color: #eee;
 }
 
-
-.resumo {
-
-    margin-top: 25px;
-
-    padding: 15px;
-
-    background-color: #f5f5f5;
-
-    border-radius: 5px;
+.acoes {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
 }
 
-
-.erro {
-
-    color: red;
-
-    margin-top: 10px;
+.status {
+    font-weight: bold;
 }
