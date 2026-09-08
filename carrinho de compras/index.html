@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrinho de Compras</title>
+
+    
+    <link rel="stylesheet" href="slety.css">
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <h1>🛒 Carrinho de Compras</h1>
+
+
+        <h2>Produtos</h2>
+
+
+        
+        <div class="produtos">
+
+
+            <div class="produto">
+
+                <h3>Mouse</h3>
+
+                <p>R$ 50,00</p>
+
+                <button onclick="adicionar('Mouse', 50)">
+                    Adicionar ao carrinho
+                </button>
+
+            </div>
+
+
+            
+            <div class="produto">
+
+                <h3>Teclado</h3>
+
+                <p>R$ 100,00</p>
+
+                <button onclick="adicionar('Teclado', 100)">
+                    Adicionar ao carrinho
+                </button>
+
+            </div>
+
+
+            
+            <div class="produto">
+
+                <h3>Headset</h3>
+
+                <p>R$ 150,00</p>
+
+                <button onclick="adicionar('Headset', 150)">
+                    Adicionar ao carrinho
+                </button>
+
+            </div>
+
+
+            
+            <div class="produto">
+
+                <h3>Monitor</h3>
+
+                <p>R$ 800,00</p>
+
+                <button onclick="adicionar('Monitor', 800)">
+                    Adicionar ao carrinho
+                </button>
+
+            </div>
+
+        </div>
+
+
+        
+        <div class="carrinho">
+
+            <h2>🛍️ Carrinho</h2>
+
+
+            <ul id="listaCarrinho"></ul>
+
+
+            <div class="resumo">
+
+                <p>
+                    Quantidade:
+                    <strong id="quantidade">0</strong>
+                </p>
+
+
+                <p>
+                    Total:
+                    <strong>
+                        R$ <span id="total">0,00</span>
+                    </strong>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
+```

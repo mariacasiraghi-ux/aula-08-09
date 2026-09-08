@@ -1,0 +1,151 @@
+
+/* Configuração da página */
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    margin: 0;
+
+    padding: 30px;
+}
+
+
+/* Área principal */
+.container {
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+
+/* Título principal */
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+/* Área onde ficam os produtos */
+.produtos {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* Cada produto */
+.produto {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #ccc;
+}
+
+
+/* Nome do produto */
+.produto h3 {
+
+    margin-top: 0;
+}
+
+
+/* Preço */
+.produto p {
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* Botões */
+button {
+
+    background-color: #222;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* Quando passar o mouse */
+button:hover {
+
+    background-color: #444;
+}
+
+
+/* Carrinho */
+.carrinho {
+
+    background-color: white;
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 8px #ccc;
+}
+
+
+/* Produtos dentro do carrinho */
+li {
+
+    margin-bottom: 15px;
+}
+
+
+/* Botão remover */
+li button {
+
+    margin-left: 15px;
+
+    background-color: #d9534f;
+}
+
+
+/* Resumo */
+.resumo {
+
+    border-top: 1px solid #ddd;
+
+    margin-top: 20px;
+
+    padding-top: 10px;
+}
+
+
+/* Celular */
+@media (max-width: 600px) {
+
+    .produtos {
+
+        grid-template-columns: 1fr;
+    }
+
+    body {
+
+        padding: 15px;
+    }
+}
