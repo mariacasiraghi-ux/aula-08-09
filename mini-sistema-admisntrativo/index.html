@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Sistema Administrativo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        #cadastro,
+        #listagem,
+        #dashboard {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        input,
+        select,
+        button {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #eeeeee;
+        }
+
+        .dashboard {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 15px;
+            flex: 1;
+            min-width: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Mini Sistema Administrativo</h1>
+
+    <div id="cadastro"></div>
+
+    <div id="listagem"></div>
+
+    <div id="dashboard"></div>
+
+
+    <script type="module" src="./js/cadastro.js"></script>
+
+    <script type="module" src="./js/listagem.js"></script>
+
+    <script type="module" src="./js/dashboard.js"></script>
+
+</body>
+
+</html>
